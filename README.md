@@ -23,4 +23,23 @@ In progress. Geometry and traffic inputs are complete. Vissim model is being bui
 - The mainline stretch beside the merge lane is assumed equal to the merge lane length
 - The ramp count and the mainline estimate are treated as the same peak period
 
+## Limitations
+
+- No observed speeds at Mercer, so the model will be checked for reasonableness, not calibrated
+- The ramp count is from February 2025; the mainline estimate uses a busy-hour factor from a different location (S212)
+- Each run is limited to 10 minutes (600 s) by the Vissim student license
+- Basemap imagery is not included in the QGIS project and loads from the internet
+- The ramp volume comes from a single weekday count (Wednesday 2/12/2025)
+
+## Tools
+
+QGIS, Microsoft Excel, PTV Vissim (Student) 2027
+
+## Files
+
+- qgis/: QGIS project and traced geometry (keep the .qgz and .gpkg in the same folder)
+- data/: traffic inputs spreadsheet and saved WSDOT data
+
 ## Results
+
+Pending
