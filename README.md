@@ -10,7 +10,7 @@ In progress. Geometry and traffic inputs are complete. Vissim model is being bui
 
 - Upstream NB I-5 AADT: WSDOT location CS11449, 2025, two-way (192,010)
 - Downstream NB I-5 AADT: WSDOT location CS01700, 2025, two-way (215,791)
-- NB entry ramp count: WSDOT location CS10905 (NB branch after both express exits), video count Wed 2/12/2025 to Thu 2/13/2025, not a holiday. PM peak hour 16:00 to 17:00 = 836 veh/h
+- NB entry ramp count: WSDOT location CS10905 (SR 5 ramp Q116735, after the Q116726R off-ramp, NB branch after both express-lane exits). 24-hour video count on Wednesday 2/12/2025, 15-minute intervals, accepted by WSDOT QC. PM peak hour 16:00 to 17:00 = 836 veh/h. File: data/CS10905_ramp_count.xlsx
 - K-factor (0.066) and D-factor (0.5329): site S212 (SR 5, MP 162.35, Seattle), WSDOT 2025 Design Hour Report, 30th highest hour
 - Capacity: Highway Capacity Manual, 7th Edition, basic freeway segment, 60 mph free-flow speed, 2,300 pc/h/ln
 - Ramp geometry: measured in QGIS on Esri World Imagery (satellite) and traced into a GeoPackage. The two measurement methods used agree within about 1.3%
