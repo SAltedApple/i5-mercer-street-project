@@ -7,3 +7,5 @@
 | CS10905_ramp_count.xlsx | NB entry ramp volume, 15-minute intervals for 24 hours (PM peak hour 836 veh/h) | WSDOT volume count report, location CS10905 | Wednesday 2/12/2025 | 11/8/2026 |
 | Design-Hour-Report-2025.xlsx | K and D factors (site S212), top-200-hour volumes | WSDOT 2025 Design Hour Report | 2025 | 11/4/2026 |
 | mercer_street_excel.xlsx | Geometry and Traffic Inputs sheets | My calculations from the sources above | | |
+| mercer_speed_profile_2015.csv | Average Tue-Thu speed by time of day (5-minute steps), averaged over three I-5 stations at MP 167.04, 167.32, and 167.56 (prefix "i", assumed northbound), plus the 10th-percentile speed on slow days | UW freeway loop detector speed dataset, Zenodo record 3258904 | 2015 | 11/8/2026 |
+| discover.py | Script that builds the CSV from the original dataset | My code | | |
