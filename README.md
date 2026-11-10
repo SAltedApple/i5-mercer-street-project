@@ -23,6 +23,7 @@ In progress. Geometry and traffic inputs are complete. Vissim model is being bui
 - Upstream and downstream I-5 stretches of 500 ft each (modeling choice)
 - The mainline stretch beside the merge lane is assumed equal to the merge lane length
 - The ramp count and the mainline estimate are treated as the same peak period
+- An exit lane begins about 177 ft along the downstream link and is not modeled. Downstream measurements end before the exit starts.
 
 ## Limitations
 
