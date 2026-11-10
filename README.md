@@ -14,6 +14,7 @@ In progress. Geometry and traffic inputs are complete. Vissim model is being bui
 - K-factor (0.066) and D-factor (0.5329): site S212 (SR 5, MP 162.35, Seattle), WSDOT 2025 Design Hour Report, 30th highest hour
 - Capacity: Highway Capacity Manual, 7th Edition, basic freeway segment, 60 mph free-flow speed, 2,300 pc/h/ln
 - Ramp geometry: measured in QGIS on Esri World Imagery (satellite) and traced into a GeoPackage. The two measurement methods used agree within about 1.3%
+- Speed reference: UW freeway loop detector dataset (Zenodo, 2015), 5-minute speeds, averaged over I-5 stations near MP 167.0 to 167.6. Used only as a reasonableness check on modeled speeds. The CSV is in data/
 
 ## Assumptions
 
@@ -22,16 +23,17 @@ In progress. Geometry and traffic inputs are complete. Vissim model is being bui
 - Upstream and downstream I-5 stretches of 500 ft each (modeling choice)
 - The mainline stretch beside the merge lane is assumed equal to the merge lane length
 - The ramp count and the mainline estimate are treated as the same peak period
-- - In the UW speed dataset, station prefix "i" is taken to be the increasing milepost direction, which is northbound on I-5. This was inferred from the naming in the dataset documentation.
 
 ## Limitations
 
 - No observed speeds at Mercer, so the model will be checked for reasonableness, not calibrated
-- The ramp count is from February 2025; the mainline estimate uses a busy-hour factor from a different location (S212)
+- The ramp count is from February 2025
+- The mainline estimate uses a busy-hour factor from a different location (S212)
 - Each run is limited to 10 minutes (600 s) by the Vissim student license
 - Basemap imagery is not included in the QGIS project and loads from the internet
 - The ramp volume comes from a single weekday count (Wednesday 2/12/2025)
-- The speed reference comes from 2015 loop detector data.
+- The speed reference is from 2015 loop detector data, averaged across all lanes at stations near MP 167.0 to 167.6 and including imputed values
+- The speed reference is used to check that modeled speeds are reasonable, not to calibrate the model
 
 ## Tools
 
