@@ -22,6 +22,7 @@ In progress. Geometry and traffic inputs are complete. Vissim model is being bui
 - Upstream and downstream I-5 stretches of 500 ft each (modeling choice)
 - The mainline stretch beside the merge lane is assumed equal to the merge lane length
 - The ramp count and the mainline estimate are treated as the same peak period
+- - In the UW speed dataset, station prefix "i" is taken to be the increasing milepost direction, which is northbound on I-5. This was inferred from the naming in the dataset documentation.
 
 ## Limitations
 
@@ -30,6 +31,7 @@ In progress. Geometry and traffic inputs are complete. Vissim model is being bui
 - Each run is limited to 10 minutes (600 s) by the Vissim student license
 - Basemap imagery is not included in the QGIS project and loads from the internet
 - The ramp volume comes from a single weekday count (Wednesday 2/12/2025)
+- The speed reference comes from 2015 loop detector data.
 
 ## Tools
 
