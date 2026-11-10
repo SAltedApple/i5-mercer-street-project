@@ -12,7 +12,8 @@
 
 ## Speed data notes
 
-- The source dataset is about 274 MB and not included because of its size. Download it from https://zenodo.org/record/3258904 and place the file next to discover.py to reproduce the CSV.
-- Station prefix "i" is the increasing milepost direction, per the dataset's GitHub documentation (https://github.com/zhiyongc/Seattle-Loop-Data). I-5 mileposts increase northbound, so "i" stations are northbound.
-- Speeds are averages across all main lanes at each station, for Tuesday to Thursday only, for 2015.
+- The source dataset is about 274 MB and not included because of its size
+- Speed data can be downloaded from https://zenodo.org/record/3258904 and place the file next to discover.py to reproduce the CSV
+- Station prefix "i" is the increasing milepost direction, per the dataset's GitHub documentation (https://github.com/zhiyongc/Seattle-Loop-Data). I-5 mileposts increase northbound, so "i" stations are northbound
+- Speeds are averages across all main lanes at each station, for Tuesday to Thursday only, for 2015
 - Citation: Yinhai Wang, Xuegang (Jeff) Ban, Zhiyong Cui, & Meixin Zhu. (2019). Freeway Inductive Loop Detector Dataset for Network-wide Traffic Speed Prediction (Version V2) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.3258904
