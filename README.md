@@ -32,6 +32,7 @@ Complete. Geometry, traffic inputs, Vissim modeling, analysis, and documentation
 - Lane-change distance (a Vissim connector setting on connector 10002, not a physical length) is 656 ft (Vissim default) in the baseline and Alt 1, 883 ft in Alt 1b (656 + 227), and 1,132 ft in Alt 1c (about the QGIS merge length). These are sensitivity settings, not calibrated values
 - The merge is modeled as link 1 plus connector 10002 (gradual taper, on the inside of a left bend of I-5). An earlier sharp-taper version is superseded and not reported
 - The alternatives lengthen link 1 by 227 ft. The modeled merge grows from 1,147 ft to about 1,376 ft (+19.9%; the plan targeted +20%)
+- Freeway desired speeds are uniform 55 to 70 mph (60 mph speed limit). Ramp vehicles enter with a 23 to 28 mph desired speed (a guess based on a 25 mph advisory on the ramp curves), and a Desired Speed Decision 12 ft along the ramp switches them to the freeway distribution. They reach about 60 mph before the merge
 
 ## Scenarios and method
 
@@ -66,6 +67,7 @@ Complete. Geometry, traffic inputs, Vissim modeling, analysis, and documentation
 - Travel-time and queue-counter measurements were not analyzed
 - These are conceptual findings under stated assumptions. They are not a prediction of real-world change at Mercer St
 - The extended merge ends close to where the exit lane begins (41 ft into the downstream link vs 268 ft in the baseline). Because the exit is not modeled, any interaction between the merge and diverging exit traffic is not captured, and the downstream measurement point lies past the exit start in the alternatives
+- Ramp acceleration is idealized. Ramp vehicles reach freeway speed before the merge, so a longer merge lane has little acceleration benefit to offer in this model
 
 ## Tools
 
@@ -74,10 +76,9 @@ QGIS, Microsoft Excel, PTV Vissim (Student) 2027, Python (pandas)
 ## Files
 
 - qgis/: QGIS project and traced geometry (keep the .qgz and .gpkg in the same folder)
-- data/: traffic inputs spreadsheet, saved WSDOT data, speed reference CSV, and simulation results (see data/README.md)
-- [data/Baseline_Data_Gradual_Taper_Summary_Fixed.xlsx, Alt1_Data.xlsx, Alt1b_Data.xlsx, Alt1c_Data.xlsx]: raw Vissim exports and per-seed summaries for each scenario
-- [data/Mercer_Combined_Results.xlsx]: per-seed values, paired differences, confidence intervals, and removals check for all four scenarios
-- [discover.py]: builds the 2015 speed profile CSV from the Zenodo dataset
+- data/: traffic inputs, saved WSDOT data, speed reference CSV and script (see data/README.md)
+- vissim/: Vissim 2027 Student model files (.inpx) for the baseline and the three alternatives. Result files, layout files, and error logs are not included
+- results/: raw Vissim exports and per-seed summaries for each scenario, plus Mercer_Combined_Results.xlsx (paired differences, confidence intervals, removals check) (see results/README.md)
 
 Not uploaded: Python virtual environment, Vissim working/layout/error/result files, and the 274 MB raw speed dataset.
 
