@@ -1,0 +1,15 @@
+# Results files
+
+Simulation results for the Mercer St merge study. See the main README for the study design and conclusions.
+
+| File | What it is | Captured |
+|---|---|---|
+| Baseline_Data_Gradual_Taper_Summary_Fixed.xlsx | Baseline: raw Vissim export (Baseline_Raw) and per-seed summary (Baseline_Summary) | [date] |
+| Alt1_Data.xlsx | Alt 1 (merge +227 ft, lane-change distance 656 ft): raw export and per-seed summary | [date] |
+| Alt1b_Data.xlsx | Alt 1b (merge +227 ft, lane-change distance 883 ft) | [date] |
+| Alt1c_Data.xlsx | Alt 1c (merge +227 ft, lane-change distance 1,132 ft) | [date] |
+| Mercer_Combined_Results.xlsx | Per-seed values for all four scenarios, paired differences, 95% confidence intervals, p-values, removals check | [date] |
+
+## Notes
+
+[paste the bullets from the old "Simulation results notes" section here]
